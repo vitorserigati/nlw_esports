@@ -10,7 +10,7 @@ export interface DuoCardProps {
   hourEnd: string;
   hourStart: string;
   name: string;
-  useVoicechannel: boolean;
+  useVoiceChannel: boolean;
   weekDays: string[];
   yearsPlaying: number;
 }
@@ -31,9 +31,9 @@ export function DuoCard({ data, onConnect }: Props) {
       />
       <DuoInfo
         label="Chamada de áudio?"
-        value={data.useVoicechannel ? "Sim" : "Não"}
+        value={data.useVoiceChannel ? "Sim" : "Não"}
         colorValue={
-          data.useVoicechannel ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT
+          data.useVoiceChannel ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT
         }
       />
 
